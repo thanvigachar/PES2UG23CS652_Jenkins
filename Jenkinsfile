@@ -31,7 +31,7 @@ pipeline {
                   nginx
                 
                 docker cp nginx/default.conf nginx-lb:/etc/nginx/conf.d/default.conf
-                docker exec nginx-lb nginx -s reload
+         
                 '''
             }
         }
